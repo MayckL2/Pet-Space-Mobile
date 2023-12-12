@@ -35,7 +35,7 @@ const Calendario = () => {
         console.log(data)
         const dados = data.map((c, i) => {
           if (c.status == 0) {
-            return <TouchableOpacity id={i}
+            return <TouchableOpacity key={i}
               onPress={c.idAgendamento ? () => salvarData(c.data, c.horario, c.idAgendamento) : () => navigation.replace('inicio')}
               style={{
                 paddingVertical: "5%",

@@ -501,7 +501,7 @@ const styles = StyleSheet.create({
     },
     subHeadLine:{
         textAlign: 'center',
-        fontSize: 18,
+        fontSize: 15,
         fontFamily: 'Poppins_500Medium',
         color: '#424242',
         padding: 16

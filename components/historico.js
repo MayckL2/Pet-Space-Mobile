@@ -21,7 +21,7 @@ import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold, P
 import { RadioButton } from 'react-native-paper';
 
 export default function Historico() {
-    const [data, setData] = useState(<Text>Nenhuma consulta no historico...</Text>)
+    const [data, setData] = useState(<Text style={{paddingHorizontal: 20}}>Nenhuma consulta no historico...</Text>)
     const [checked, setChecked] = useState('em andamento');
 
     const navigation = useNavigation();
