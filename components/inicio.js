@@ -81,10 +81,10 @@ export default function Inicio() {
             // filtra os indices undefineds do array
             // console.log(dados.filter((dados)=> dados != undefined ))
             setData(dados.filter((dados)=> dados != undefined ))
-            console.log(data)
           });
-      }
-    }, 2000)
+        }
+      }, 2000)
+      console.log(data)
   }, []);
 
   const drawer = useRef(null);
@@ -148,7 +148,7 @@ export default function Inicio() {
 
           <View style={{ marginBottom: 200, gap: 16 }}>
 
-            {data == undefined ? <SemConsulta /> : data }
+            {data == undefined || data == '' ? <SemConsulta /> : data }
 
           </View>
 
